@@ -9,7 +9,7 @@ function Movie({year, title, summary, poster, genres}){
     return (
         <Link to={{
             pathname:"/movie-datail",
-            state: {year, title, summary, poster, genres}    /* state 값을 props로 전달 */
+            state: {year, title, summary, poster, genres}    // state 값을 props로 전달
         }}>
             <div className="movie">
                 <img src={poster} alt={title} title={title}/>
