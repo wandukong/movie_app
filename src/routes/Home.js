@@ -45,10 +45,4 @@ class Home extends React.Component{     // class component로 변경한 이유�
   }
 }
 
-
-// Component Life Cycle
-// mounting 컴포넌트 생성 : construnctor() -> render() -> componentDidMount() 
-// updating 컴포넌트 수정 : setState() 호출되면 -> render() -> componentDidUpdate()
-// unmounting 컴포넌트 제거 : componentWillUnmount()
-
 export default Home;
