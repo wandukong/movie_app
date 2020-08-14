@@ -12,7 +12,7 @@ function App(){
     <Navigation />
     <Route path="/" exact={true} component={Home} />  {/*exact : 주어진 경로와 정확히 맞아 떨어져야만 라우팅 */}
     <Route path="/about" component={About} />        
-    <Route path="/movie-datail" component={Detail} />
+    <Route path="/movie/:id" component={Detail} />
   </HashRouter>
   );
 }

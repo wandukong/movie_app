@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 const noSummary = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ";
 
-function Movie({year, title, summary, poster, genres}){
+function Movie({year, id, title, summary, poster, genres}){
     return (
         <div className="movie">
             <Link to={{
-                pathname:"/movie-datail",
+                pathname:`/movie/${id}`,
                 state: {year, title, summary, poster, genres}    // state 값을 props로 전달
                 }}>
                 <img src={poster} alt={title} title={title}/>
