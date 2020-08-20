@@ -11,7 +11,6 @@ class Home extends React.Component{     // class component로 변경한 이유�
 
   getMovies = async () => {               // async와 await는 자바스크립트의 비동기 처리 새로운 패턴. axoios.get()이 끝날 때까지 기다린다.  
     const {data : {data : {movies}}} = await axios.get("https://yts.mx/api/v2/list_movies.json?sorting_by=rating"); 
-    console.log(movies);
     this.setState({movies, isLoading : false }) // this.setState({movies:movies}) 단축해서 사용 
   }
 
@@ -35,7 +34,10 @@ class Home extends React.Component{     // class component로 변경한 이유�
                 year={movie.year} 
                 title={movie.title} 
                 poster={movie.medium_cover_image}
-                genres={movie.genres} 
+                image={movie.background_image}
+                genres={movie.genres}
+                rating={movie.rating} 
+                runtime={movie.runtime}
               />
             ))}
         </div>
