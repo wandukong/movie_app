@@ -20,7 +20,7 @@ class Detail extends React.Component{
                             <p className="label_genres">Genre :ㅤ</p>
                             <ul className="detail_genres">{state.genres.map( (genre, index) => <li key={index} className="genres_genre">{genre}ㅤ</li>)}</ul>
                             <div style={{float:"none"}}>
-                                <p className="detail_runtime">Runtine :ㅤ{state.runtime}min</p> 
+                                <p className="detail_runtime">Runtime :ㅤ{state.runtime}min</p> 
                                 <p className="detail_rating">Rating :ㅤ{state.rating}★</p> 
                             </div>
                         </div>

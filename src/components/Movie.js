@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import "./Movie.css"
 import { Link } from "react-router-dom";
 
-const noSummary = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ";
-
 function Movie({year, id, title, summary, poster, genres, rating, image, runtime}){
     return (
         <div className="movie">
